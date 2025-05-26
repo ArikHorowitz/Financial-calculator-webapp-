@@ -7,9 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="fc100-container">
-        <div class="fc100-display" id="fc100-display">0</div>
+    <div class="fc100-body">
+        <div class="fc100-brand-row">
+            <span class="fc100-brand">CASIO</span>
+            <span class="fc100-model">FC-100</span>
+            <span class="fc100-type">FINANCIAL CONSULTANT</span>
+        </div>
+        <div class="fc100-screws">
+            <span class="fc100-screw"></span>
+            <span class="fc100-screw"></span>
+        </div>
+        <div class="fc100-display-panel">
+            <div class="fc100-lcd-label">FC-100</div>
+            <div class="fc100-display" id="fc100-display">0</div>
+        </div>
         <div class="fc100-keypad">
+            <div class="fc100-row">
+                <button class="fc100-btn fn-btn shift-btn" data-fn="SHIFT">SHIFT</button>
+                <button class="fc100-btn fn-btn mode-btn" data-fn="MODE">MODE</button>
+                <button class="fc100-btn fn-btn" data-fn="▲">▲</button>
+                <button class="fc100-btn fn-btn" data-fn="▼">▼</button>
+            </div>
             <div class="fc100-row">
                 <button class="fc100-btn fn-btn" data-fn="N">N</button>
                 <button class="fc100-btn fn-btn" data-fn="I/Y">I/Y</button>
@@ -42,6 +60,10 @@
             <div class="fc100-row">
                 <button class="fc100-btn wide-btn" data-key="0">0</button>
             </div>
+        </div>
+        <div class="fc100-screws fc100-screws-bottom">
+            <span class="fc100-screw"></span>
+            <span class="fc100-screw"></span>
         </div>
     </div>
     <script src="script.js"></script>
