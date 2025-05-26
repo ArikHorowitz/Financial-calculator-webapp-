@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const display = document.getElementById('fc100-display');
+    // Initialize 4-line display
+    display.innerHTML = '0.\n\n\n';  // Three empty lines plus one with "0."
+
     const calcType = document.getElementById('calc-type');
     const loanFields = document.getElementById('loan-fields');
     const savingsFields = document.getElementById('savings-fields');
