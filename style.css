@@ -5,80 +5,87 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 400px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 30px 25px 25px 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.fc100-container {
-    background: #222;
-    border-radius: 18px;
+.fc100-body {
+    background: #e3e3e3;
+    border-radius: 32px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.45);
-    width: 340px;
+    width: 370px;
     margin: 40px auto;
-    padding: 32px 18px 24px 18px;
-    border: 2px solid #444;
+    padding: 24px 18px 18px 18px;
+    border: 3px solid #bdbdbd;
     position: relative;
 }
 
-h1 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 25px;
-}
-
-label {
-    display: block;
-    margin-top: 15px;
-    color: #34495e;
-}
-
-input, select, button {
-    width: 100%;
-    padding: 8px 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 1em;
-}
-
-button {
-    background: #2980b9;
-    color: #fff;
-    border: none;
-    margin-top: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.2s;
-}
-
-button:hover {
-    background: #1c5d8c;
-}
-
-#result {
-    margin-top: 25px;
-    padding: 15px;
-    background: #eaf6ff;
-    border-radius: 5px;
-    color: #2c3e50;
+.fc100-brand-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 1.1em;
-    min-height: 30px;
+    margin-bottom: 2px;
+    color: #222;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.fc100-brand {
+    color: #222;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.fc100-model {
+    color: #1a3a5a;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.fc100-type {
+    color: #888;
+    font-size: 0.9em;
+    font-weight: normal;
 }
 
+.fc100-screws {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2px 6px 2px;
+}
+.fc100-screw {
+    width: 14px;
+    height: 14px;
+    background: #bbb;
+    border-radius: 50%;
+    border: 2px solid #888;
+    box-shadow: 0 1px 2px #888 inset;
+    display: inline-block;
+}
+.fc100-screws-bottom {
+    margin-top: 10px;
+}
+
+.fc100-display-panel {
+    background: #dbe6e4;
+    border-radius: 10px;
+    padding: 8px 10px 10px 10px;
+    margin-bottom: 12px;
+    border: 2px solid #bdbdbd;
+    box-shadow: 0 2px 8px #bbb inset;
+    position: relative;
+}
+.fc100-lcd-label {
+    position: absolute;
+    left: 12px;
+    top: 6px;
+    font-size: 0.9em;
+    color: #888;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 .fc100-display {
     background: #e6e6e6;
     color: #222;
     font-family: 'Digital-7', 'Consolas', monospace;
     font-size: 2.1em;
     border-radius: 8px;
-    padding: 18px 12px;
-    margin-bottom: 18px;
+    padding: 18px 12px 10px 12px;
+    margin-top: 16px;
     text-align: right;
     letter-spacing: 2px;
     min-height: 38px;
@@ -90,13 +97,12 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-top: 10px;
 }
-
 .fc100-row {
     display: flex;
     gap: 8px;
 }
-
 .fc100-btn {
     flex: 1 1 0;
     background: #f4f4f4;
@@ -111,24 +117,30 @@ button:hover {
     box-shadow: 0 1px 2px #bbb;
     font-family: inherit;
 }
-
 .fc100-btn:active {
     background: #d1eaff;
 }
-
 .fn-btn {
     background: #e0e7ef;
     color: #1a3a5a;
     font-weight: bold;
     border-color: #7fa1c7;
 }
-
 .cpt-btn {
     background: #f7d774;
     color: #7a5a00;
     border-color: #e6b800;
 }
-
+.shift-btn {
+    background: #f7b774;
+    color: #7a3a00;
+    border-color: #e6a800;
+}
+.mode-btn {
+    background: #b7e7f7;
+    color: #005a7a;
+    border-color: #00a8e6;
+}
 .wide-btn {
     flex: 2 1 0;
 }
