@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Calculator</h1>
+        <form id="calculator-form">
+            <label for="calc-type">Calculation Type:</label>
+            <select id="calc-type" name="calc-type">
+                <option value="loan">Loan Payment</option>
+                <option value="compound">Compound Interest</option>
+                <option value="savings">Savings Growth</option>
+            </select>
+
+            <div id="common-fields">
+                <label for="principal">Principal Amount ($):</label>
+                <input type="number" id="principal" name="principal" required>
+
+                <label for="rate">Annual Interest Rate (%):</label>
+                <input type="number" id="rate" name="rate" step="0.01" required>
+
+                <label for="years">Years:</label>
+                <input type="number" id="years" name="years" required>
+            </div>
+
+            <div id="loan-fields">
+                <label for="payments-per-year">Payments per Year:</label>
+                <input type="number" id="payments-per-year" name="payments-per-year" value="12" required>
+            </div>
+
+            <div id="savings-fields" style="display:none;">
+                <label for="monthly-contribution">Monthly Contribution ($):</label>
+                <input type="number" id="monthly-contribution" name="monthly-contribution" value="0">
+            </div>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
