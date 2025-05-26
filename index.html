@@ -7,40 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Financial Calculator</h1>
-        <form id="calculator-form">
-            <label for="calc-type">Calculation Type:</label>
-            <select id="calc-type" name="calc-type">
-                <option value="loan">Loan Payment</option>
-                <option value="compound">Compound Interest</option>
-                <option value="savings">Savings Growth</option>
-            </select>
-
-            <div id="common-fields">
-                <label for="principal">Principal Amount ($):</label>
-                <input type="number" id="principal" name="principal" required>
-
-                <label for="rate">Annual Interest Rate (%):</label>
-                <input type="number" id="rate" name="rate" step="0.01" required>
-
-                <label for="years">Years:</label>
-                <input type="number" id="years" name="years" required>
+    <div class="fc100-container">
+        <div class="fc100-display" id="fc100-display">0</div>
+        <div class="fc100-keypad">
+            <div class="fc100-row">
+                <button class="fc100-btn fn-btn" data-fn="N">N</button>
+                <button class="fc100-btn fn-btn" data-fn="I/Y">I/Y</button>
+                <button class="fc100-btn fn-btn" data-fn="PV">PV</button>
+                <button class="fc100-btn fn-btn" data-fn="PMT">PMT</button>
+                <button class="fc100-btn fn-btn" data-fn="FV">FV</button>
+                <button class="fc100-btn fn-btn cpt-btn" data-fn="CPT">CPT</button>
             </div>
-
-            <div id="loan-fields">
-                <label for="payments-per-year">Payments per Year:</label>
-                <input type="number" id="payments-per-year" name="payments-per-year" value="12" required>
+            <div class="fc100-row">
+                <button class="fc100-btn" data-key="7">7</button>
+                <button class="fc100-btn" data-key="8">8</button>
+                <button class="fc100-btn" data-key="9">9</button>
+                <button class="fc100-btn fn-btn" data-fn="DEL">DEL</button>
+                <button class="fc100-btn fn-btn" data-fn="AC">AC</button>
             </div>
-
-            <div id="savings-fields" style="display:none;">
-                <label for="monthly-contribution">Monthly Contribution ($):</label>
-                <input type="number" id="monthly-contribution" name="monthly-contribution" value="0">
+            <div class="fc100-row">
+                <button class="fc100-btn" data-key="4">4</button>
+                <button class="fc100-btn" data-key="5">5</button>
+                <button class="fc100-btn" data-key="6">6</button>
+                <button class="fc100-btn fn-btn" data-fn="+/-">+/-</button>
+                <button class="fc100-btn fn-btn" data-fn="." >.</button>
             </div>
-
-            <button type="submit">Calculate</button>
-        </form>
-        <div id="result"></div>
+            <div class="fc100-row">
+                <button class="fc100-btn" data-key="1">1</button>
+                <button class="fc100-btn" data-key="2">2</button>
+                <button class="fc100-btn" data-key="3">3</button>
+                <button class="fc100-btn fn-btn" data-fn="ENTER">ENTER</button>
+                <button class="fc100-btn fn-btn" data-fn="EXE">EXE</button>
+            </div>
+            <div class="fc100-row">
+                <button class="fc100-btn wide-btn" data-key="0">0</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
